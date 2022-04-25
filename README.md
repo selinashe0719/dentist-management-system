@@ -1,7 +1,9 @@
 # dentist-management-system
 dentist management system(using SQL database
 #this is a group work work made for CSI2136 course final project.
-Install Guide:
+
+
+####Install Guide####
 Requirements: Apache Tomcat 8.5 and Java version 7+
 1. Install Java 7
   a. Download Java for Windows
