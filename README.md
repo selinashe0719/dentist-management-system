@@ -35,13 +35,13 @@ Requirements: Apache Tomcat 8.5 and Java version 7+
 
 
 ####Users login information:#####
-User type username password user_firstname
-patients：
-bsmith pass Bob
-away break Alice
-dentists：
-royal royal123 Beatrice
-royal1 royal123 David
-receptionist：
-1speaker2 2hull3 Dylan
-receptionistguy a19283d Robert
+User type：username，password，user_firstname:
+patients:
+bsmith,pass,Bob;
+away,break,Alice;
+dentists:
+royal,royal123,Beatrice;
+royal1,royal123,David;
+receptionist:
+1speaker2,2hull3,Dylan;
+receptionistguy,a19283d,Robert;
