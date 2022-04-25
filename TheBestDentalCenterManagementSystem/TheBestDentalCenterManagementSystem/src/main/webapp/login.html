@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<style>
+			.centered {
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				text-align: center;
+			}
+			img {
+				height: 25%;
+				position: absolute;
+				left: 50%;
+				top: 25%;
+				transform: translateX(-50%) translateY(-50%);
+			}
+		</style>
+		<script>
+			function loadRole() {
+				var queryString = location.search.substring(1);
+				var data = queryString.split("&");
+				title.innerHTML = data[0] + " login";
+				document.getElementById("role").value = data[0];
+			}
+		</script>
+	</head>
+	<body onload="loadRole()">
+		<img src="Logo.jpg">
+		<div class="centered">
+			<p id="title"></p>
+			<form action="loginServlet" method="post">
+				Username: <input type="text" name="username"/><br><br>
+				Password: <input type="password" name="password"/><br><br>
+				<input type="hidden" id="role" name="role"/>
+				<input type="submit" value="Login"/>
+			</form>
+		</div>
+	</body>
+</html>
